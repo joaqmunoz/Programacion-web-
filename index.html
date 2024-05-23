@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuTienda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #carouselExampleIndicators .carousel-inner img {
+            height: 400px;
+            object-fit: cover;
+        }
+
+        #carouselExampleIndicators .carousel-indicators {
+            bottom: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            color: white; 
+            transition: background-color 0.3s; 
+            border-radius: 20px; 
+            margin-right: 10px; 
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1); 
+        }
+
+        .nav-link.inicio {
+            background-color: #007bff; 
+        }
+
+        .nav-link.productos {
+            background-color: #28a745; 
+        }
+
+        .nav-link.contacto {
+            background-color: #dc3545; 
+        }
+
+        .nav-link.informacion {
+            background-color: #17a2b8;
+        }
+
+        .nav-link.carrito {
+            background-color: #6c757d; 
+            border-radius: 20px; 
+            position: relative; 
+            padding-left: 30px; 
+        }
+
+        .nav-link.carrito img {
+            position: absolute; 
+            top: 50%; 
+            left: 5px; 
+            transform: translateY(-50%); 
+            width: 20px; 
+        }
+
+        .nav-link.carrito .texto-carrito {
+            margin-left: 25px; 
+        }
+
+        .nav-link.carrito:hover {
+            background-color: #495057;
+        }
+
+        .btn-registrarse {
+            background-color: #ffcc00; 
+            border-radius: 20px; 
+            color: black; 
+            font-weight: bold;
+        }
+
+        .btn-registrarse:hover {
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="nav-link inicio btn-effect" href="index.html" style="background: none; border: none; padding: 0;">
+                <img src="loguito2.png" alt="Logo" style="width: 100px; height: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link inicio" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link productos" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contacto" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link informacion" href="informacion.html">Información</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="carrito.html" class="nav-link carrito">
+                            <img src="img/IMG6.png" alt="12">
+                            <span class="texto-carrito">Carrito</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-registrarse" href="registro.html">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/celulares.jpg" class="d-block w-100" alt="Celulares">
+            </div>
+            <div class="carousel-item">
+                <img src="img/notebooks.jpg" class="d-block w-100" alt="Notebooks">
+            </div>
+            <div class="carousel-item">
+                <img src="img/hardware.jpeg" class="d-block w-100" alt="Hardware">
+            </div>  
+            <div class="carousel-item">
+                <img src="img/perifericos.jpg" class="d-block w-100" alt="Periféricos">
+            </div>  
+            <div class="carousel-item">
+                <img src="img/consolas.jpeg" class="d-block w-100" alt="Consolas">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/IMG1.png" class="img-fluid" alt="Producto 1">
+                <h2>Celulares</h2>
+                <a href="celulares.html" class="btn btn-primary">Ver producto</a>
+            </div>
+            <div class="col-md-4">
+                <img src="img/IMG2.jpeg" class="img-fluid" alt="Producto 2">
+                <h2>Notebooks</h2>
+                <a href="pcs.html" class="btn btn-primary">Ver producto</a>
+            </div>
+            <div class="col-md-4">
+                <img src="img/IMG3.jpg" class="img-fluid" alt="Producto 3">
+                <h2>Hardware</h2>
+                <a href="hardware.html" class="btn btn-primary">Ver producto</a>
+            </div>
+            <div class="col-md-4">
+                <img src="img/IMG4.webp" class="img-fluid" alt="Producto 4">
+                <h2>Periféricos</h2>
+                <a href="perifericos.html" class="btn btn-primary">Ver producto</a>
+            </div>
+            <div class="col-md-4">
+                <img src="img/IMG5.jpeg" class="img-fluid" alt="Producto 5">
+                <h2>Consolas</h2>
+                <a href="consolas.html" class="btn btn-primary">Ver producto</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2022 TuTienda. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
